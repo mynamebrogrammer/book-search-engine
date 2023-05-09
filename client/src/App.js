@@ -3,6 +3,8 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import SearchBooks from './pages/SearchBooks';
 import SavedBooks from './pages/SavedBooks';
 import Navbar from './components/Navbar';
+// Create an Apollo Provider to make every request work with the Apollo server.
+import { ApolloProvider } from '@apollo/react-hooks';
 
 function App() {
   return (
