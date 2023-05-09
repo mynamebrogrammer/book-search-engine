@@ -4,10 +4,17 @@ import SearchBooks from './pages/SearchBooks';
 import SavedBooks from './pages/SavedBooks';
 import Navbar from './components/Navbar';
 // Create an Apollo Provider to make every request work with the Apollo server.
-import { ApolloProvider } from '@apollo/react-hooks';
+import { ApolloClient, InMemoryCache, ApolloProvider } from '@apollo/client';
+
+const client = new ApolloClient({
+  uri: '/graphql',
+  cache: new InMemoryCache(),
+});
+
 
 function App() {
   return (
+    <ApolloProvider client={client}>
     <Router>
       <>
         <Navbar />
@@ -18,6 +25,7 @@ function App() {
         </Switch>
       </>
     </Router>
+    </ApolloProvider>
   );
 }
 

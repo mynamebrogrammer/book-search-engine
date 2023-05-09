@@ -14,6 +14,17 @@ const PORT = process.env.PORT || 3001;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+// create new Apollo server and pass in schema data
+const server = new ApolloServer({
+  typeDefs,
+  resolvers,
+});
+
+// integrate Apollo server with Express application as middleware
+server.applyMiddleware({ app });
+
+
+
 // if we're in production, serve client/build as static assets
 if (process.env.NODE_ENV === 'production') {
   app.use(express.static(path.join(__dirname, '../client/build')));
