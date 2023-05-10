@@ -36,6 +36,11 @@ Note: This aplilcation is deployed on Heroku. See the [Deployed Application](#de
 
 [Book Search Engine](https://peaceful-coast-53838.herokuapp.com/)
 
+![star wars home](https://github.com/mynamebrogrammer/book-search-engine/assets/79487250/b469bf2e-28db-4c70-a1ef-d69985dc621c)
+
+![star wars signup](https://github.com/mynamebrogrammer/book-search-engine/assets/79487250/8c2d4e03-7fcb-4519-a979-01001f4c79b8)
+
+![Screenshot 2023-05-09 185328](https://github.com/mynamebrogrammer/book-search-engine/assets/79487250/c08babc3-dacb-4b23-8b1b-48c078d8f51a)
 
 
 ## License
