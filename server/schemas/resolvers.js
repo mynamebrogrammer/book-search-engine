@@ -34,11 +34,8 @@ const resolvers = {
       return { token, user };
     },
     // accepts a book author's array, description, title, bookId, image, and link as parameters; returns a User type
-    saveBook: async (
-      parent,
-      { authors, description, title, bookId, image, link },
-      context
-    ) => {
+    saveBook: async (parent, { bookData }, context) => {
+      
       const user = await User.findOneAndUpdate(
         { _id: context.user._id },
         {
