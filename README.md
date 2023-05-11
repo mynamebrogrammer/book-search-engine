@@ -4,7 +4,7 @@
 
 ## Description
 
-This is a MERN stack application that allows users to search for books using the Google Books API. Users can create an account, login, and save books to their profile. Users can also delete books from their profile.
+This is a MERN stack application that allows users to search for books using the Google Books API. Users can create an account, login, and (work in progress) save books to their profile. Users can also delete books from their profile.
 
 ## Table of Contents
 
